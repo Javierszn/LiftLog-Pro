@@ -1,33 +1,29 @@
 # LiftLog Pro
 
-Aplicación Flutter para registrar rutinas de fuerza, ejercicios, marcas y progreso visual. Usa SQLite en Android/iOS y almacenamiento local del navegador en Web.
+## Revisión 1: ejercicios
 
-## Ejecutar en Chrome
+Esta versión inicial permite consultar una lista de ejercicios de ejemplo, agregar ejercicios, editar sus datos, abrir una pantalla de detalle y eliminar elementos deslizando la tarjeta.
+
+El flujo usa conceptos que trabajamos en clase: `StatefulWidget`, `setState`, `ListView.builder`, `AlertDialog`, `DropdownButton`, `Dismissible`, `SnackBar` y `Navigator.push`.
+
+Los datos se guardan únicamente mientras la aplicación está abierta. Al reiniciarla, vuelven los ejemplos iniciales. La persistencia, el inicio de sesión y registro, la cámara, el resumen y el perfil quedan para las siguientes etapas de la propuesta.
+
+## Ejecutar
+
+En Chrome:
 
 ```powershell
 & "C:\src\flutter\bin\flutter.bat" run -d chrome
 ```
 
-## Ejecutar en Android
+En Android:
 
 ```powershell
 & "C:\src\flutter\bin\flutter.bat" run
 ```
 
-## Compilar APK de Android
+## Revisión estática
 
 ```powershell
-& "C:\src\flutter\bin\flutter.bat" build apk --release
+& "C:\src\flutter\bin\flutter.bat" analyze --no-pub
 ```
-
-El APK se genera en `build/app/outputs/flutter-apk/app-release.apk`.
-
-## Módulos
-
-- Registro e inicio de sesión local.
-- Resumen de actividad, meta semanal y volumen estimado.
-- Rutinas por día con alta, consulta, edición y borrado por deslizamiento.
-- Progreso visual con fotos capturadas y guardadas en el dispositivo.
-- Perfil con meta semanal y cierre de sesión.
-
-Los datos se guardan localmente en el dispositivo o navegador donde se creó la cuenta.
