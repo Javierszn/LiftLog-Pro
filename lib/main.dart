@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'features/liftlog/screens/first_review_screen.dart';
+import 'features/liftlog/screens/dashboard_screen.dart';
 
 void main() {
   runApp(const LiftLogProApp());
@@ -17,7 +17,7 @@ class LiftLogProApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF176B4D)),
         useMaterial3: true,
       ),
-      home: const FirstReviewScreen(),
+      home: const DashboardScreen(),
     );
   }
 }

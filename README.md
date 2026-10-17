@@ -1,28 +1,32 @@
 # LiftLog Pro
 
-## Revisión 1: ejercicios
+## Primera revision
 
-Esta versión inicial permite consultar una lista de ejercicios de ejemplo, agregar ejercicios, editar sus datos, abrir una pantalla de detalle y eliminar elementos deslizando la tarjeta.
+Esta version muestra el flujo principal de la propuesta:
 
-El flujo usa conceptos que trabajamos en clase: `StatefulWidget`, `setState`, `ListView.builder`, `AlertDialog`, `DropdownButton`, `Dismissible`, `SnackBar` y `Navigator.push`.
+- Dashboard con accesos a los modulos.
+- Lista de ejercicios con alta, consulta, edicion y eliminacion por deslizamiento.
+- Detalle de cada ejercicio.
+- Pantalla de progreso visual preparada para integrar la camara.
+- Perfil con una meta semanal temporal.
 
-Los datos se guardan únicamente mientras la aplicación está abierta. Al reiniciarla, vuelven los ejemplos iniciales. La persistencia, el inicio de sesión y registro, la cámara, el resumen y el perfil quedan para las siguientes etapas de la propuesta.
+El CRUD de ejercicios funciona en memoria; los cambios se reinician al cerrar la aplicacion. La pantalla de progreso es una maqueta navegable y todavia no captura fotos. El inicio de sesion, SQLite y el guardado permanente de preferencias quedan para siguientes etapas.
 
-## Ejecutar
+El codigo de esta revision usa `StatefulWidget`, `setState`, `ListView.builder`, `AlertDialog`, `DropdownButton`, `Dismissible`, `SnackBar` y `Navigator.push`, patrones practicados en clase.
 
-En Chrome:
+## Ejecutar en Chrome
 
 ```powershell
 & "C:\src\flutter\bin\flutter.bat" run -d chrome
 ```
 
-En Android:
+## Ejecutar en Android
 
 ```powershell
 & "C:\src\flutter\bin\flutter.bat" run
 ```
 
-## Revisión estática
+## Analisis estatico
 
 ```powershell
 & "C:\src\flutter\bin\flutter.bat" analyze --no-pub
